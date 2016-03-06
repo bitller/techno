@@ -9,7 +9,7 @@
             <img src="<?php echo get_site_url(); ?>/wp-content/themes/techno/facebook.png">
         </div>
         <!-- END View on facebook -->
-        
+
     </footer>
     <!-- END Footer -->
 
