@@ -1,0 +1,254 @@
+/*
+Theme Name: Techno
+Theme URI: http://bitller.com
+Author: Alexandru Bugarin
+Author URI: http://bitller.com
+*/
+
+body {
+    background-color: #F0F0F0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.margin-top {
+    margin-top: 32px;
+}
+
+/* navbar */
+.navbar-default {
+    padding: 15px 0;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    border-bottom: 2px solid #dddddd;
+}
+
+.navbar-default .navbar-brand {
+    font-size: 25px;
+    transition: color 350ms;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: #26B89A;
+    transition: color 350ms;
+}
+
+.navbar-default ul li {
+    font-weight: bold;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: #ffffff;
+    font-weight: bold;
+    color: #26B89A;
+}
+
+.sub-header {
+    margin-top: 82px;
+    background-color: #26B89A;
+    border-top: 4px solid #229F86;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.sub-header .container {
+    margin-top: -5px;
+}
+
+.well-custom {
+    background-color: #ffffff;
+    border-radius: 3px;
+    border-bottom: 2px solid #dddddd;
+    margin-bottom: 30px;
+}
+
+.post-image {
+    width: 100%;
+}
+
+.post-image img {
+    width: 100%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.post-image img:hover {
+    opacity: 0.8;
+}
+
+.date-and-category {
+    height: 45px;
+    background-color: #F6F6F6;
+}
+
+.date-and-category .content {
+    padding: 12px 15px;
+    font-weight: bold;
+    color: #848484;
+}
+
+.post-content {
+    padding: 15px;
+}
+
+.title {
+    margin-top: -20px;
+}
+
+.title a {
+    color: #454E58;
+    transition: color 350ms;
+    -webkit-transition: color 350ms;
+    text-decoration: none;
+}
+
+.title a:hover {
+    color: #26B89A;
+    transition: color 350ms;
+    -webkit-transition: color 350ms;
+}
+
+.article-text {
+    color: #6C7A89;
+}
+
+/**
+ * Single.php
+ */
+.post-container {
+    background-color: #ffffff;
+    border-bottom: 2px solid #dddddd;
+    border-radius: 3px;
+    padding: 10px 30px 10px 30px;
+}
+
+.post-container .content {
+    color: #6F6F6F;
+    line-height: 190%;
+    font-size: 16px;
+}
+
+.post-meta {
+    margin-left: -20px;
+    color: #848484;
+}
+
+.post-meta ul li {
+    left: 0;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.comments-container {
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-bottom: 2px solid #dddddd;
+    border-radius: 3px;
+    padding: 10px 30px 30px 30px;
+}
+
+.comments-container .comment {
+}
+
+.comments-container .comment .avatar {
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.comments-container .comment .comment-details {
+    display: inline-block;
+    vertical-align: top;
+    width: 85%;
+    padding-left: 10px;
+}
+
+.comments-container .comment .author, .comments-container .comment .date {
+    display: inline-block;
+}
+
+.comments-container .comment .date {
+    color: #888888;
+}
+
+.comments-container .comment .text {
+    padding-top: 20px;
+    color: #5E5E5E;
+    line-height: 180%;
+    font-size: 15px;
+}
+
+.divider {
+    height: 2px;
+    width: 100%;
+    display: block; /* for use on default inline elements like span */
+    margin: 20px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+/**
+ * Remove last divider from comments
+ */
+.divider:last-child {
+    display: none;
+}
+
+/**
+ * Sidebar.php
+ */
+.sidebar-container {
+    background-color: #ffffff;
+    border-bottom: 2px solid #dddddd;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.sidebar {
+    padding: 20px;
+}
+
+.sidebar ul li {
+    display: block;
+    margin-left: -40px;
+}
+
+.sidebar ul li a {
+    color: #888888;
+    transition: color 350ms;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    color: #26B89A;
+    transition: color 350ms;
+}
+
+.sidebar .episode {
+    margin: 15px 0;
+}
+
+.sidebar .episode .thumb {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.sidebar .episode .thumb img {
+    border-radius: 3px;
+}
+
+.sidebar .episode a {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/**
+ * Footer
+ */
+.site-footer {
+    margin: 30px 0;
+    color: #848484;
+}
