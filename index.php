@@ -7,7 +7,7 @@
     <?php while(have_posts()) : the_post(); ?>
 
         <!-- BEGIN Post well column -->
-        <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+        <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
 
             <!-- BEGIN Article well -->
             <article class="well-custom">
