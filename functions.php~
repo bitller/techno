@@ -5,7 +5,7 @@ require_once('wp_bootstrap_navwalker.php');
 
 function techno_resources() {
     wp_enqueue_style('bootstrap', get_stylesheet_directory_uri().'/stylesheets/bootstrap.css');
-    wp_enqueue_style('style', get_stylesheet_directory_uri() . '/style.css');
+    wp_enqueue_style('style', get_stylesheet_directory_uri() . '/stylesheets/style.css');
 }
 
 add_action('wp_enqueue_scripts', 'techno_resources');
