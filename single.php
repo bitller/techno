@@ -3,10 +3,10 @@
 <?php if(have_posts()): while(have_posts()): the_post(); ?>
 
     <!-- BEGIN Column -->
-    <div class="col-md-8">
+<!--    <div class="col-md-8 col-xs-12">-->
 
         <!-- BEGIN Post container -->
-        <div class="post-container">
+        <div class="col-md-8 col-xs-12 post-container">
 
             <!-- BEGIN Post title -->
             <h3><?php the_title(); ?></h3>
@@ -27,24 +27,26 @@
         </div>
         <!-- END Post container -->
 
+    <!-- BEGIN Between column -->
+    <div class="col-md-1"></div>
+    <!-- END Between column -->
+    <!-- BEGIN Sidebar column -->
+    <div class="col-md-3 col-xs-12 sidebar-container">
+        <?php get_sidebar(); ?>
+    </div>
+    <!-- END Sidebar column -->
+
         <!-- BEGIN Post comments container -->
-        <div class="comments-container">
+        <div class="col-md-8 col-xs-12 comments-container">
             <?php comments_template(); ?>
         </div>
         <!-- END Post comments container -->
 
-    </div>
+<!--    </div>-->
     <!-- END Column -->
 
-    <!-- BEGIN Between column -->
-    <div class="col-md-1"></div>
-    <!-- END Between column -->
 
-    <!-- BEGIN Sidebar column -->
-    <div class="col-md-3 sidebar-container">
-        <?php get_sidebar(); ?>
-    </div>
-    <!-- END Sidebar column -->
+
 
 <?php endwhile; endif; ?>
 
