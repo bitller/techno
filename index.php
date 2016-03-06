@@ -1,13 +1,12 @@
-<?php
+<?php get_header(); ?>
 
-get_header();
+<?php if (have_posts()): ?>
 
-if (have_posts()):
-    ?>
+    <!-- BEGIN Posts -->
     <div class="row posts">
-    <?php
-    while(have_posts()) : the_post(); ?>
+    <?php while(have_posts()) : the_post(); ?>
 
+        <!-- BEGIN Post well column -->
         <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
 
             <!-- BEGIN Article well -->
@@ -16,9 +15,7 @@ if (have_posts()):
                 <!-- BEGIN Post image -->
                 <div class="post-image">
                     <a href="<?php the_permalink(); ?>">
-                        <?php if ( has_post_thumbnail() ) {
-                        the_post_thumbnail([320,320]);
-                        }?>
+                        <?php if (has_post_thumbnail())the_post_thumbnail([320,320]); ?>
                     </a>
                 </div>
                 <!-- END Post image -->
@@ -27,10 +24,10 @@ if (have_posts()):
                 <div class="date-and-category">
 
                     <div class="content">
+
                         <!-- BEGIN Post date -->
                         <div class="date pull-left">
-                            <span class="glyphicon glyphicon-time"></span>
-                            <?php the_date('d-m-Y') ?>
+                            <span class="glyphicon glyphicon-time"></span><?php the_date('d-m-Y') ?>
                         </div>
                         <!-- END Post date -->
 
@@ -38,11 +35,14 @@ if (have_posts()):
                         <div class="category pull-right">
                             <span class="glyphicon glyphicon-tag"></span>
                             <?php $categories = get_the_category();
-                            if ( ! empty( $categories ) ) {
-                                echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
-                            } ?>
+                            if (!empty($categories)): ?>
+                                <a href="<?php echo esc_url(get_category_link($categories[0]->term_id));?>">
+                                    <?php echo esc_html($categories[0]->name); ?>
+                                </a>
+                            <?php endif; ?>
                         </div>
                         <!-- END Post category -->
+
                     </div>
 
                 </div>
@@ -53,9 +53,7 @@ if (have_posts()):
                     <!-- BEGIN Article title -->
                     <div class="title">
                         <h3>
-                            <a href="<?php the_permalink(); ?>">
-                                <?php the_title(); ?>
-                            </a>
+                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                         </h3>
                     </div>
                     <!-- END Article title -->
@@ -69,15 +67,17 @@ if (have_posts()):
                 </div>
 
             </article>
+            <!-- END Article well -->
+
         </div>
+        <!-- END Post well column -->
 
-    <?php endwhile ?>
+    <?php endwhile; ?>
     </div>
+    <!-- END Posts -->
 
-<?php else:
-    echo '<p>No content found</p>';
-endif;
+<?php else: ?>
+    <p>No content found</p>
+<?php endif; ?>
 
-get_footer();
-
-?>
+<?php get_footer(); ?>
