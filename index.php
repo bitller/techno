@@ -27,7 +27,7 @@
 
                         <!-- BEGIN Post date -->
                         <div class="date pull-left">
-                            <span class="glyphicon glyphicon-time"></span><?php the_date('d-m-Y') ?>
+                            <span class="glyphicon glyphicon-time"></span>&nbsp;<?php the_date('d-m-Y') ?>
                         </div>
                         <!-- END Post date -->
 
